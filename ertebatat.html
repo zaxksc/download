@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ارتباطات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="ertebatat.html">
+    <link rel="icon" href="LocaSeamtapng.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            overflow: hidden; /* Ensure no scrollbars appear due to background animation */
+            background: #000; /* Fallback color */
+            animation: backgroundAnimation 15s ease infinite;
+            transition: background 1s ease-in-out; /* Smooth background color transition */
+        }
+        @keyframes backgroundAnimation {
+            0% {
+                background: linear-gradient(45deg, #ff6b6b, #f9cb28);
+            }
+            25% {
+                background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+            }
+            50% {
+                background: linear-gradient(45deg, #a2c2e6, #c2e9fb);
+            }
+            75% {
+                background: linear-gradient(45deg, #d4fc79, #96e6a1);
+            }
+            100% {
+                background: linear-gradient(45deg, #ff6b6b, #f9cb28);
+            }
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            animation: boxColorChange 10s ease infinite; /* Fancy color change animation */
+        }
+        @keyframes boxColorChange {
+            0% {
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            50% {
+                background-color: #f0f8ff;
+                box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            }
+            100% {
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 36px; /* Larger icons */
+            transition: transform 0.3s, color 0.3s;
+        }
+        .social-links a:hover {
+            color: #0073e6;
+            transform: scale(1.2);
+        }
+        .text-box {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: boxColorChange 10s ease infinite; /* Fancy color change animation */
+        }
+        .text-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .text-box h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #333;
+            animation: fadeIn 1s ease-in;
+        }
+        .text-box p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+            animation: fadeIn 1s ease-in 0.5s;
+            animation-fill-mode: both;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #0073e6;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .back-button:hover {
+            background-color: #005bb5;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="social-links">
+            <a href="https://t.me/locaseamta" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="https://discord.gg/EDTwBdjW" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
+            <a href="https://instagram.com/locasea_mta" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="teamspeak://sv.locasea.lol" target="_blank" aria-label="TeamSpeak"><i class="fab fa-teamspeak"></i></a>
+        </div>
+    </div>
+    <div class="text-box">
+        <h2>چگونه با شما در ارتباط باشم؟</h2>
+        <p>شما میتوانید با هرکدام از روش های بالا با ما در ارتباط باشید</p>
+        <a href="https://locasea.lol" class="back-button">برگشت</a> <!-- Back button -->
+    </div>
+</body>
+</html>
