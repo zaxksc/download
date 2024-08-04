@@ -34,3 +34,15 @@
 			transform: none;
 			opacity: 1;
 		}
+
+
+		.video-container {
+			text-align: center; /* Center the video horizontally */
+			margin: 20px 0; /* Adjust the spacing as needed */
+		}
+		
+		.video-container video {
+			max-width: 100%; /* Make sure the video doesn't overflow */
+			height: auto; /* Maintain aspect ratio */
+		}
+		

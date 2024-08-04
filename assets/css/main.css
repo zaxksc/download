@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body, input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Far', sans-serif;
 		font-weight: 400;
 		color: #919499;
 		font-size: 14pt;
@@ -1956,6 +1956,7 @@ input, select, textarea {
 	.wrapper {
 		position: relative;
 		padding: 6em 0 9em 0;
+		
 	}
 
 		.wrapper .title {
@@ -2001,14 +2002,19 @@ input, select, textarea {
 				background: url("images/shadow.png");
 			}
 
-		.wrapper.style1 {
-			background: #e97770 url("images/overlay.png");
-			color: #eee;
-			color: rgba(255, 255, 255, 0.75);
-		}
+			.wrapper.style1 {
+				width: 100%; /* Adjust as needed */
+				height: 130vh; /* Adjust as needed */
+				background-image: url("images/bg3.png");
+				background-size: cover; /* or 'auto' */
+
+				background-repeat: no-repeat;
+				background-position: center;
+			  }
+			  
 
 			.wrapper.style1 .title {
-				background: #e97770 url("images/overlay.png");
+				background: #585858 url("images/banner.png");
 				color: #fff;
 			}
 
@@ -2017,7 +2023,7 @@ input, select, textarea {
 			}
 
 		.wrapper.style2 {
-			background: #fff;
+            background-color: rgb(71, 71, 71);
 		}
 
 			.wrapper.style2 .title {
@@ -2037,6 +2043,7 @@ input, select, textarea {
 			.wrapper.style3 .image {
 				border: solid 10px #fff;
 			}
+			
 
 /* Page Wrapper */
 
@@ -2272,7 +2279,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background: #282b34 url("images/overlay.png");
+		background: #282b34;
 		color: #eee;
 		color: rgba(255, 255, 255, 0.5);
 		padding-bottom: 6em;
@@ -2846,6 +2853,16 @@ input, select, textarea {
 			.box.post-excerpt h3, .box.post-excerpt p {
 				margin-left: 32.5%;
 			}
+			.video-container {
+				text-align: center; /* Center the video horizontally */
+				margin: 20px 0; /* Adjust the spacing as needed */
+			}
+			
+			.video-container video {
+				max-width: 100%; /* Make sure the video doesn't overflow */
+				height: auto; /* Maintain aspect ratio */
+			}
+			
 
 		/* Wrapper */
 
@@ -2983,3 +3000,238 @@ input, select, textarea {
 						}
 
 	}
+
+
+/* Style for the top center button */
+.top-center-button {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style for the top center button */
+.top-center-button .button {
+    display: inline-flex; /* Use flexbox to center content */
+    align-items: center;  /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    background-color: #00a2ff;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    height: 60px; /* Adjust height as needed */
+}
+
+/* Style for the download buttons */
+.download-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style for the download buttons */
+.download-buttons .button {
+    display: inline-flex; /* Use flexbox to center content */
+    align-items: center;  /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    background-color: #8f8f8f;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    height: 60px; /* Adjust height as needed */
+}
+
+/* Hover state for buttons */
+.download-buttons .button:hover {
+    background-color: #7a7a7a; /* Slightly darker shade for hover */
+    transform: scale(1.05);
+}
+
+/* Dropdown Container */
+.dropdown-container {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+/* Hidden Checkbox for Dropdown Toggle */
+.dropdown-toggle {
+    display: none;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #8f8f8f;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Dropdown Button Arrow */
+.arrow {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #8f8f8f;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) scaleY(0);
+    opacity: 0;
+    transform-origin: top;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+/* Show the dropdown menu when checkbox is checked */
+.dropdown-toggle:checked ~ .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateX(-50%) scaleY(1);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #000000;
+    font-family: 'Iranian Sans', sans-serif; /* Persian font */
+    text-align: center;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #5f5f5f;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown-toggle:checked + .dropbtn {
+    background-color: #7a7a7a;
+    transform: scale(1.05);
+}
+
+/* Persian Font Style */
+@import url('https://fonts.googleapis.com/css2?family=Iranian+Sans:wght@400;700&display=swap');
+body {
+    font-family: 'Iranian Sans', sans-serif;
+}
+
+
+.video-tutorial {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.video-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.video-container .video-link {
+    display: block;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+
+.video-container .video-link img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.video-container .video-link:hover img {
+    transform: scale(1.05);
+}
+
+.video-container .video-link p {
+    margin: 10px 0 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.text-container {
+    flex: 1;
+}
+
+.text-container h2 {
+    margin-top: 0;
+}
+
+.text-container p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+    justify-content: space-between; /* Space between video and content */
+}
+
+.video-container {
+    flex: 1;
+    margin-right: 20px; /* Space between video and content */
+}
+
+#features {
+    flex: 2; /* Adjusts the width of the content section */
+}
+
+/* Ensure the video is responsive */
+video {
+    width: 100%;
+    height: auto;
+}
+
+
+html {
+	scroll-behavior: smooth;
+  }
+  
+
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-image {
+    text-align: center;
+    flex: 1;
+}
+
+.footer-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
